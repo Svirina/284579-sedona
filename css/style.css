@@ -2,23 +2,28 @@ body{
 	font-size: 14px;
 	line-height: 21px;
 	color: #333333;
-	font-weight: normal;
-	text-transform: uppercase;
-	font-family: PT Sans;
+	font-weight: normal;	
+	font-family: "PT Sans", "Tahoma", "sans-serif";
+	background: #000000 url("sedona-index-1200.jpg") no-repeat 50% 3px;
+ 	background-size: 1200px auto;
 }
 h1{
 	font-size: 21px;
 	line-height: 26px;
 	color: #000;
-	font-weight: bold;
-	text-transform: uppercase;
-	font-family: PT Sans;
+	font-weight: bold;	
+	font-family:  "PT Sans", "Tahoma", "sans-serif";
 }
 h2{
 	font-size: 21px;
 	line-height: 21px;
 	color: #000;
-	font-weight: bold;
-	text-transform: uppercase;
-	font-family: PT Sans;
+	font-weight: bold;	
+	font-family:  "PT Sans", "Tahoma", "sans-serif";
+}
+header{
+	min-height: 55px;
+	width: 1200px;
+	margin:0px auto;
+	background-color: #fff;
 }
