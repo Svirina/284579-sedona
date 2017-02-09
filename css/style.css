@@ -1,29 +1,129 @@
 body{
+	min-width: 1200px;
+  	min-height: 2760px;
+ 	margin: 0px;
+  	padding: 0px;
+
 	font-size: 14px;
 	line-height: 21px;
 	color: #333333;
 	font-weight: normal;	
 	font-family: "PT Sans", "Tahoma", "sans-serif";
-	background: #000000 url("sedona-index-1200.jpg") no-repeat 50% 3px;
+	background: #fff;
  	background-size: 1200px auto;
 }
 h1{
 	font-size: 21px;
 	line-height: 26px;
 	color: #000;
-	font-weight: bold;	
-	font-family:  "PT Sans", "Tahoma", "sans-serif";
+	font-weight: bold;		
 }
 h2{
 	font-size: 21px;
 	line-height: 21px;
 	color: #000;
-	font-weight: bold;	
-	font-family:  "PT Sans", "Tahoma", "sans-serif";
+	font-weight: bold;		
 }
-header{
-	min-height: 55px;
+.clearfix::after {
+  	content: "";
+  	display: table;
+  	clear: both;
+}
+.main-navigation{
+	width: 1180px;
+	margin:0px auto;	
+	padding: 0 10px;	
+}
+.main-navigation li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.main-navigation a {
+    display: block;
+    padding: 8px 10px;    
+    height: 35px;
+}
+.promo{
+	width: 458px;
+  	height: 352px;
+  	margin-right: auto;
+  	margin-left: auto;
+}
+.reasons{
+	width:1200px;
+	margin:0 auto;
+
+	font-size: 0px;
+	background-color: #0FF;
+}
+.reason-header{
+	margin: 0 auto;
+	width: 512px;	
+	font-size: 14px;
+	text-align: center;
+}
+.reason{
+	position: relative;
 	width: 1200px;
-	margin:0px auto;
-	background-color: #fff;
+	margin: 0px auto;
+	font-size: 0px;
+	background-color: #00F;
+	height: 260px;	
+}
+.reason-text{
+	float: left;
+	width: 33%;
+	top: 50%;
+	text-align: center;
+	font-size: 14px;
+	background-color: #F0F;
+	vertical-align: top;
+}
+.reason-img{
+	float:right;
+	width: 67%;
+	text-align: right;
+	font-size: 14px;
+	background-color: #0FF;
+}
+.reason-row{
+	display: inline-block;
+	width: 33.33%;
+	font-size: 14px;
+	background-color: #F00;
+	vertical-align: middle;
+	text-align: top;
+}
+.search{
+	display: block;
+	width: 1200px;
+	margin:0 auto;
+	text-align: center;
+}
+.popup{
+	display: block;
+	width: 1200px;
+	margin:0 auto;
+	text-align: center;
+}
+.form-booking-find{
+	width: 575px;
+	min-height: 395px;
+	background-color: #F00
+}
+.main-footer{
+	width: 1200px;
+	margin:0 auto;
+}
+.hashtag,
+.social{
+	float:left;
+	width: 400px;
+	text-align: center;
+}
+.copyright{
+	float:right;
+	width: 400px;
+	min-height: 120px;
 }
