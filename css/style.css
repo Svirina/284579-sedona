@@ -1,16 +1,19 @@
 body{
-	min-width: 1200px;
-  	min-height: 2760px;
- 	margin: 0px;
-  	padding: 0px;
+	min-width: 1200px;  	
+ 	margin: 0 0;
+  	padding: 0 0;
 
 	font-size: 14px;
 	line-height: 21px;
 	color: #333333;
 	font-weight: normal;	
 	font-family: "PT Sans", "Tahoma", "sans-serif";
-	background: #fff;
- 	background-size: 1200px auto;
+	text-transform: uppercase;
+	background-color: #fff; 	
+ 	background-image: url("../img/background-photo.jpg");
+ 	background-size: 1200px 510px;
+ 	background-repeat: no-repeat;
+ 	background-position: center 55px;
 }
 h1{
 	font-size: 21px;
@@ -24,31 +27,73 @@ h2{
 	color: #000;
 	font-weight: bold;		
 }
+
 .clearfix::after {
   	content: "";
   	display: table;
   	clear: both;
 }
 .main-navigation{
-	width: 1180px;
-	margin:0px auto;	
-	padding: 0 10px;	
+	position: relative;
+	width: 1200px;
+	margin: 0px auto;	
+	padding: 0 0px;
+	background-color: #FFF; 	
+}
+.main-navigation ul{
+	margin: 0;
+  	padding: 0;
+  	list-style: none;
+  	font-size: 0px;
 }
 .main-navigation li {
     display: inline-block;
-    margin-right: 5px;
+  	vertical-align: top;
+  	font-size: 14px;
+  	line-height: 26px;
+  	text-align: center;
+  	width: 20%;
 }
 
 .main-navigation a {
     display: block;
-    padding: 8px 10px;    
+    padding: 10px 20px;    
     height: 35px;
+    color: #000;
+    text-decoration: none;
+}
+.main-navigation li:nth-child(2){
+	padding-right: 20%;
+}
+.main-navigation a:hover{
+	color: #81b3d2;
+}
+.logo{
+	position: absolute;
+	left: 50%;
+	top: 0px;
+	margin-left: -68px;	
+	z-index: 3;
+
 }
 .promo{
-	width: 458px;
-  	height: 352px;
-  	margin-right: auto;
-  	margin-left: auto;
+	display: block;
+	position: relative;
+    height: 508px;
+    padding-top: 75px;	
+    text-align: center;
+    z-index: 2;
+    background: #fff url("../img/background-photo.jpg") no-repeat 50% 0px;	
+}
+.promo:after{
+	content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: auto 0;
+    width: 1200px;
+    height: 57px;
+    background: url(../img/mask-triangles.png) no-repeat 50% 0;    
 }
 .reasons{
 	width:1200px;
