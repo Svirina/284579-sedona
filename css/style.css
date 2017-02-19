@@ -127,7 +127,7 @@ h2 {
 .reason-header {
     margin: 0 auto;
     padding-top: 60px;
-    width: 445px;
+    width: 490px;
     font-size: 14px;
     text-align: center;
     overflow: hidden;
@@ -284,8 +284,9 @@ h2 {
     box-shadow: 0 7px 15px rgba(0, 1, 1, .15);
 }
 .popup.modal__popup--active .search-form-container {
-    display: block;
+    display: block;  
 }
+
 .search-form-visible {
     display: block;
 }
@@ -784,6 +785,7 @@ h2 {
 }
 .results-header .sort {
     float: left;
+    width: 50%;
     font-size: 12px;
     line-height: 18px;
     margin-top: 6px;
@@ -804,10 +806,11 @@ h2 {
     padding: 0;
     margin: 0;
     margin-right: 40px;
+    border-bottom: 1px dotted #81b3d2;
 }
 .results-header .sort ul li a {
     color: #000;
-    text-decoration: underline dotted;
+    text-decoration: none;
     opacity: .3;
 }
 .results-header .sort ul li a:hover {
@@ -875,7 +878,7 @@ h2 {
 .hotel-content {
     overflow: hidden;
     float: left;
-    width: calc(100% - 134px - 31px - 120px);
+    width: calc(100% - 134px - 31px - 127px);
 }
 .link-title {
     font-size: 21px;
