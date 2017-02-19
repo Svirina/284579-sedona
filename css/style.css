@@ -353,6 +353,7 @@ h2 {
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     background-color: transparent;
+    font-size: 0;
     outline: none;
 }
 .icon-calendar:hover {
