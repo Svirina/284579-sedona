@@ -10,14 +10,14 @@ body {
 * {
     box-sizing: border-box;
 }
-h1 {
+.reason-header h1 {
     font-size: 21px;
     line-height: 26px;
     color: #000;
     font-weight: bold;
     margin: 0;
 }
-h2 {
+.reason-col h2 {
     font-size: 21px;
     line-height: 21px;
     color: #000;
@@ -89,7 +89,7 @@ h2 {
     color: #000;
     opacity: .3;
 }
-.main-navigation .active a {
+.active a {
     color: #766357;
 }
 .logo {
@@ -105,7 +105,7 @@ h2 {
     padding-top: 75px;
     text-align: center;
     z-index: 2;
-    background: #FFF url("../img/background-photo.jpg") no-repeat 0 -55px;
+    background: #FFF url("../img/background-photo.jpg") no-repeat 0 -55px; /* фоновый цвет белый */
 }
 .promo:after {
     content: '';
@@ -116,6 +116,7 @@ h2 {
     height: 57px;
     width: 1200px;
     background: url("../img/mask-triangles.png") no-repeat 50% 0;
+    background-color: transparent;
 }
 .reasons {
     margin: 0px;
@@ -166,7 +167,7 @@ h2 {
     vertical-align: top;
 }
 .reason-text h2 {
-    width: 151px;
+    width: 200px;
     margin: 1px auto 24px auto;
 }
 .reason-text p {
@@ -179,6 +180,7 @@ h2 {
     display: inline-block;
     width: calc(100% - 400px);
     height: 256px;
+    vertical-align: top;
 }
 .reason-col {
     display: block;
@@ -199,7 +201,7 @@ h2 {
     width: 76px;
     height: 76px;
     margin-left: -38px;
-    background: transparent url(../img/sprites-icons.png) no-repeat;
+    background: transparent url(../img/sprites-icons.png) no-repeat; /*тоже указан*/
 }
 .reason-col-house::before {
     background-position: 0 -304px;
@@ -393,26 +395,26 @@ h2 {
     background-color: transparent;
     outline: none;
 }
-.unit-container .btn.minus-btn {
+.btn.minus-btn {
     top: 14px;
     left: 13px;
     background-position: -5px -337px;
 }
-.unit-container .btn.minus-btn:hover {
+.btn.minus-btn:hover {
     background-position: -5px -363px;
 }
-.unit-container .btn.minus-btn:active {
+.btn.minus-btn:active {
     background-position: -5px -350px;
 }
-.unit-container .btn.plus-btn {
+.btn.plus-btn {
     top: 14px;
     right: 13px;
     background-position: -5px -380px;
 }
-.unit-container .btn.plus-btn:hover {
+.btn.plus-btn:hover {
     background-position: -5px -422px;
 }
-.unit-container .btn.plus-btn:active {
+.btn.plus-btn:active {
     background-position: -5px -401px;
 }
 .search-form .find-btn {
@@ -438,7 +440,7 @@ h2 {
 .search-form .find-btn:active {
     background: #5496bd;
 }
-.search-form .find-btn:active span {
+.find-btn:active span {
     opacity: 0.3;
 }
 .main-footer {
@@ -474,6 +476,7 @@ h2 {
 .social-btn {
     position: relative;
     display: inline-block;
+    vertical-align: top;
     margin: 36px 2px;
     width: 46px;
     height: 48px;
@@ -516,6 +519,7 @@ h2 {
 .copyright a {
     position: relative;
     display: inline-block;
+    vertical-align: top;
     width: 123px;
     height: 50px;
     background-image: url(../img/spritesheet.png);
@@ -598,7 +602,7 @@ h2 {
     border: none;
     outline: none;
 }
-.price-controls .max-price input {
+.max-price input {
     margin: 0 0 0 7px;
 }
 .range-controls {
@@ -692,7 +696,7 @@ h2 {
 .checkbox input[type="checkbox"]:disabled + label:before {
     opacity: .3;
 }
-.filters .right .title {
+.right .title {
     margin-bottom: 10px;
     text-align: left;
 }
@@ -792,38 +796,39 @@ h2 {
     margin-top: 6px;
     margin-left: 3px;
 }
-.results-header .sort .title {
+.sort .title {
     float: left;
     margin-right: 54px;
 }
-.results-header .sort ul {
+.sort ul {
     list-style: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
-.results-header .sort ul li {
+.sort li {
     display: inline-block;
+    vertical-align: top;
     padding: 0;
     margin: 0;
     margin-right: 40px;
     border-bottom: 1px dotted #81b3d2;
 }
-.results-header .sort ul li a {
+.sort a {
     color: #000;
     text-decoration: none;
     opacity: .3;
 }
-.results-header .sort ul li a:hover {
+.sort a:hover {
     color: #81b3d2;
     opacity: 1;
 }
-.results-header .sort ul li a:active {
+.sort a:active {
     color: #000;
     opacity: 1;
     text-decoration: none;
 }
-.results-header .sort ul li.active a {
+.sort .active a { /*иначе активный элмент описывается и из меню вложенности никак не избежать*/
     color: #81b3d2;
     opacity: 1;
     text-decoration: none;
@@ -837,29 +842,30 @@ h2 {
 }
 .results-header .arrows a {
     display: inline-block;
+    vertical-align: top;
     width: 11px;
     height: 10px;
     margin-left: 13px;
     background: url('../img/arrow.png') no-repeat;
 }
-.results-header .arrows a.up {
+a.up {
     background-position: -10px -20px;
 }
-.results-header .arrows a.up:hover {
+a.up:hover {
     background-position: -10px -10px;
 }
-.results-header .arrows a.up:active,
-.results-header .arrows a.up.active {
+a.up:active,
+a.up.active {
     background-position: -10px 0px;
 }
-.results-header .arrows a.down {
+a.down {
     background-position: 0 0;
 }
-.results-header .arrows a.down:hover {
+a.down:hover {
     background-position: 0 -10px;
 }
-.results-header .arrows a.down:active,
-.results-header .arrows a.down.active {
+a.down:active,
+a.down.active {
     background-position: 0 -20px;
 }
 .results-search {
@@ -879,7 +885,7 @@ h2 {
 .hotel-content {
     overflow: hidden;
     float: left;
-    width: calc(100% - 134px - 31px - 127px);
+    width: calc(50%);
 }
 .link-title {
     font-size: 21px;
@@ -889,6 +895,7 @@ h2 {
     font-weight: bold;
     margin: -3px 0 0 0;
     display: inline-block;
+    vertical-align: top;
 }
 .link-title:hover {
     color: #81b3d2;
@@ -910,6 +917,7 @@ h2 {
 }
 .hotel-btn .btn {
     display: inline-block;
+    vertical-align: top;
     font-size: 14px;
     line-height: 21px;
     text-decoration: none;
@@ -919,23 +927,23 @@ h2 {
     font-weight: bold;
     margin: 0 0 0 0px;
 }
-.hotel-btn .btn.btn--blue {
+.hotel-btn .btn--blue {
     background: #81b3d2;
 }
-.hotel-btn .btn.btn--blue:hover {
+.hotel-btn .btn--blue:hover {
     background: #669ec0;
 }
-.hotel-btn .btn.btn--blue:active {
+.hotel-btn .btn--blue:active {
     background: #5496bd;
     color: rgba(255, 255, 255, .3);
 }
-.hotel-btn .btn.btn--brown {
+.hotel-btn .btn--brown {
     background: #766357;
 }
-.hotel-btn .btn.btn--brown:hover {
+.hotel-btn .btn--brown:hover {
     background: #604e43;
 }
-.hotel-btn .btn.btn--brown:active {
+.hotel-btn .btn--brown:active {
     background: #503e33;
     color: rgba(255, 255, 255, .3);
 }
@@ -951,6 +959,7 @@ h2 {
 }
 .rating-stars .icon-star {
     display: inline-block;
+    vertical-align: top;
     width: 22px;
     height: 17px;
     background: url('../img/star.png');
