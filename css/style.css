@@ -105,7 +105,7 @@ body {
     padding-top: 75px;
     text-align: center;
     z-index: 2;
-    background: #FFF url("../img/background-photo.jpg") no-repeat 0 -55px; /* фоновый цвет белый */
+    background: #3f7da6 url("../img/background-photo.jpg") no-repeat 0 -55px; /* фоновый цвет белый */
 }
 .promo:after {
     content: '';
@@ -201,7 +201,7 @@ body {
     width: 76px;
     height: 76px;
     margin-left: -38px;
-    background: transparent url(../img/sprites-icons.png) no-repeat; /*тоже указан*/
+    background: transparent url('../img/sprites-icons.png') no-repeat; /*тоже указан*/
 }
 .reason-col-house::before {
     background-position: 0 -304px;
@@ -352,7 +352,7 @@ body {
     margin-right: 7px;
     cursor: pointer;
     background-position: -5px -152px;
-    background-image: url(../img/spritesheet.png);
+    background-image: url('../img/spritesheet.png');
     background-repeat: no-repeat;
     background-color: transparent;
     font-size: 0;
@@ -390,7 +390,7 @@ body {
     width: 11px;
     height: 11px;
     border: none;
-    background-image: url(../img/spritesheet.png);
+    background-image: url('../img/spritesheet.png');
     cursor: pointer;
     background-color: transparent;
     outline: none;
@@ -430,6 +430,7 @@ body {
     color: #ffffff;
     background: #81b3d2;
     border: none;
+    text-decoration: none;
     outline: none;
     font-weight: bold;
     cursor: pointer;
@@ -468,7 +469,7 @@ body {
     padding: 47px 0;
     font-weight: bold;
 }
-.social {
+.social, .copyright {
     margin: 0 auto;
     padding: 0;
     text-align: center;
@@ -495,13 +496,13 @@ body {
     background-position: center;
 }
 .social-btn.btn-twitter:after {
-    background-image: url(../img/_0003s_0003_t.png);
+    background-image: url('../img/_0003s_0003_t.png');
 }
 .social-btn.btn-facebook:after {
-    background-image: url(../img/_0003s_0004_f.png);
+    background-image: url('../img/_0003s_0004_f.png');
 }
 .social-btn.btn-youtube:after {
-    background-image: url(../img/_0003s_0005_y.png);
+    background-image: url('../img/_0003s_0005_y.png');
 }
 .social-btn:hover {
     background-color: #669ec0;
@@ -512,31 +513,32 @@ body {
 .social-btn:active:after {
     opacity: .3;
 }
-.copyright {
-    line-height: 26px;
-    padding: 15px 0 0 15px;
+.copyright{
+    padding-top: 35px;
 }
-.copyright a {
-    position: relative;
-    display: inline-block;
-    vertical-align: top;
-    width: 123px;
-    height: 50px;
-    background-image: url(../img/spritesheet.png);
-    margin-left: 5px;
-    top: 21px;
+.copyright__text {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
 }
-.copyright a:hover {
+.copyright__link {
+  display: inline-block;
+  vertical-align: middle;
+  width: 123px;
+  height: 50px;
+  background-image: url('../img/spritesheet.png');
+}
+.copyright__link:hover {    
     background-position: 0 -98px;
 }
-.copyright a:focus {
+.copyright__link:focus {
     background-position: 0 -49px;
 }
 .filters {
     overflow: hidden;
     width: 100%;
     min-height: 215px;
-    background: url('../img/background.jpg') center;
+    background:#3f7da6 url('../img/background.jpg') center;
     background-size: cover;
     padding: 28px 71px 8px;
 }
